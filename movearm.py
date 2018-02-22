@@ -30,3 +30,19 @@ def wristup():
 def wristdown():
     MoveArm(1,[8,0,0]) # Wrist down
     return 'the arm has moved!!!'
+
+def gripopen():
+    MoveArm(1,[2,0,0]) #Grip open
+    return 'the arm has moved!!!'
+
+def gripclose():
+    MoveArm(1,[1,0,0]) #Grip close
+    return 'the arm has moved!!!'
+
+def lighton():
+    MoveArm(1,[0,0,1]) #Light on
+    return 'the arm has moved!!!'
+
+def lightoff():
+    MoveArm(1,[0,0,0]) #Light off
+    return 'the arm has moved!!!'
