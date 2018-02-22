@@ -1,12 +1,16 @@
 from flask import Flask
-from movearm import move_arm
+from movearm import baseclockwise, baseanticlockwise
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
    return 'hello world, the app has landed'
 
-@app.route('/move')
+@app.route('/baseclockwise')
+def move_that_arm():
+   return move_arm()
+
+@app.route('/baseanticlockwise')
 def move_that_arm():
    return move_arm()
 
