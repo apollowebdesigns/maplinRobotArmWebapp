@@ -4,6 +4,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
+   return 'hello world, the app has landed'
+
+@app.route('/move')
+def hello_world():
    return move_arm()
 
 if __name__ == '__main__':
