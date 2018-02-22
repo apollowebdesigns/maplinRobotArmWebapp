@@ -7,7 +7,7 @@ def hello_world():
    return 'hello world, the app has landed'
 
 @app.route('/move')
-def hello_world():
+def move_that_arm():
    return move_arm()
 
 if __name__ == '__main__':
