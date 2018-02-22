@@ -1,4 +1,5 @@
 from flask import Flask
+from movearm import move_arm
 app = Flask(__name__)
 
 @app.route('/')
