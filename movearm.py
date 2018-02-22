@@ -4,5 +4,5 @@ def baseclockwise():
     return 'the arm has moved!!!'
 
 def baseanticlockwise():
-    MoveArm(1,[0,1,0]) #Rotate base anti-clockwise
+    MoveArm(1,[0,2,0]) #Rotate base clockwise
     return 'the arm has moved!!!'
