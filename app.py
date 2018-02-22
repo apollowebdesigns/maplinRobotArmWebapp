@@ -14,5 +14,21 @@ def baseclockwise_root():
 def baseanticlockwise_root():
    return baseanticlockwise()
 
+@app.route('/up')
+def up_root():
+   return up()
+
+@app.route('/down')
+def down_root():
+   return down()
+
+@app.route('/elbowup')
+def elbowup_root():
+   return elbowup()
+
+@app.route('/elbowdown')
+def elbowdown_root():
+   return elbowdown()
+
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)
