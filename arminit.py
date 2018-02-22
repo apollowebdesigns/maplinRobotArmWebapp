@@ -18,3 +18,4 @@ def MoveArm(Duration, ArmCmd):
     #Stop the movement after waiting a specified duration
     time.sleep(Duration)
     ArmCmd=[0,0,0]
+    RoboArm.ctrl_transfer(0x40,6,0x100,0,ArmCmd,3)
