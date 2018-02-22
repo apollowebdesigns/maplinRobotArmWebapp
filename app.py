@@ -7,12 +7,12 @@ def hello_world():
    return 'hello world, the app has landed'
 
 @app.route('/baseclockwise')
-def move_that_arm():
-   return move_arm()
+def baseclockwise_root():
+   return baseclockwise()
 
 @app.route('/baseanticlockwise')
-def move_that_arm():
-   return move_arm()
+def baseanticlockwise_root():
+   return baseanticlockwise()
 
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)
