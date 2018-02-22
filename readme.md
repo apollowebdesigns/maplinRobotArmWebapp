@@ -5,6 +5,7 @@ This app is a django app for controlling the maplin robot arm from a Raspberry P
 python manage.py runserver 8080
 
 ### Demo Arm Commands
+
 MoveArm(1,[0,1,0]) #Rotate base anti-clockwise
 MoveArm(1,[0,2,0]) #Rotate base clockwise
 MoveArm(1,[64,0,0]) #Shoulder up
@@ -17,3 +18,11 @@ MoveArm(1,[2,0,0]) #Grip open
 MoveArm(1,[1,0,0]) #Grip close
 MoveArm(1,[0,0,1]) #Light on
 MoveArm(1,[0,0,0]) #Light off
+
+### Useful urls
+
+https://www.wikihow.com/Use-a-USB-Robotic-Arm-with-a-Raspberry-Pi-(Maplin)
+
+note, one of the ids are wrong so for python use lsusb command to find the write id
+
+# HAVE FAITH!!!
