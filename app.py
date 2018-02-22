@@ -30,5 +30,29 @@ def elbowup_root():
 def elbowdown_root():
    return elbowdown()
 
+@app.route('/wristup')
+def wristup_root():
+   return wristup()
+
+@app.route('/wristdown')
+def wristdown_root():
+   return wristdown()
+
+@app.route('/gripopen')
+def gripopen_root():
+   return gripopen()
+
+@app.route('/gripclose')
+def gripclose_root():
+   return gripclose()
+
+@app.route('/lighton')
+def lighton_root():
+   return lighton()
+
+@app.route('/lightoff')
+def lightoff_root():
+   return lightoff()
+
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)
