@@ -4,6 +4,8 @@
 
 ~~python manage.py runserver 8080~~
 
+python manage.py runserver 0:8000
+
 flask currently
 
 ### Demo Arm Commands
