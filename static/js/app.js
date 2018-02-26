@@ -1,3 +1,4 @@
 (function() {
-    console.log('hello - awesome!!!');
+    angular
+        .module('app', []);
 })();
