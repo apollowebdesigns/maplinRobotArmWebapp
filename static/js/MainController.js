@@ -1,7 +1,7 @@
 (function() {
     angular
         .module('app')
-        .controller('MainController')
+        .controller('MainController', MainController);
 
     function MainController() {
         var vm = this;
