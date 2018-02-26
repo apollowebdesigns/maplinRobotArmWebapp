@@ -12,7 +12,8 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-    <script src="/static/app.js"></script>
+    {% load static %}
+    <script src="{% static "js/app.js" %}"></script>
 </head>
 <body class="container">
     <h1><img style="height:100px;width:auto;margin-bottom:-30px" src="https://raw.githubusercontent.com/ServiceStack/Assets/master/img/livedemos/techstacks/django-logo.png" alt=""> This should work??</h1>
