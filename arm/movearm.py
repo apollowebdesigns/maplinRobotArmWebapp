@@ -1,55 +1,48 @@
-from django.shortcuts import render
-from django.http import HttpResponse
 from arminit import MoveArm
-
-def index(request):
-    context = {}
-    return render(request, 'arm/index.html', context)
-
-def baseclockwise(request):
+def baseclockwise():
     MoveArm(1,[0,1,0]) #Rotate base anti-clockwise
     return 'the arm has moved!!!'
 
-def baseanticlockwise(request):
+def baseanticlockwise():
     MoveArm(1,[0,2,0]) #Rotate base clockwise
     return 'the arm has moved!!!'
 
-def up(request):
+def up():
     MoveArm(1,[64,0,0]) #Shoulder up
     return 'the arm has moved!!!'
 
-def down(request):
+def down():
     MoveArm(1,[128,0,0]) #Shoulder down
     return 'the arm has moved!!!'
 
-def elbowup(request):
+def elbowup():
     MoveArm(1,[16,0,0]) #Elbow up
     return 'the arm has moved!!!'
 
-def elbowdown(request):
+def elbowdown():
     MoveArm(1,[32,0,0]) #Elbow down
     return 'the arm has moved!!!'
 
-def wristup(request):
+def wristup():
     MoveArm(1,[4,0,0]) #Wrist up
     return 'the arm has moved!!!'
 
-def wristdown(request):
+def wristdown():
     MoveArm(1,[8,0,0]) # Wrist down
     return 'the arm has moved!!!'
 
-def gripopen(request):
+def gripopen():
     MoveArm(1,[2,0,0]) #Grip open
     return 'the arm has moved!!!'
 
-def gripclose(request):
+def gripclose():
     MoveArm(1,[1,0,0]) #Grip close
     return 'the arm has moved!!!'
 
-def lighton(request):
+def lighton():
     MoveArm(1,[0,0,1]) #Light on
     return 'the arm has moved!!!'
 
-def lightoff(request):
+def lightoff():
     MoveArm(1,[0,0,0]) #Light off
     return 'the arm has moved!!!'
