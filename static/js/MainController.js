@@ -4,7 +4,7 @@ angular
 
 MainController.$inject = ['$scope']
 
-function MainController() {
+function MainController($scope) {
 
     console.log('hit hit')
     $scope.test = 'hello from the test!!!!';
