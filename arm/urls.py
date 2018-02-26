@@ -4,8 +4,8 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('baseclockwise/', views.baseclockwise, name='baseclockwise'),
-    path('baseanticlockwise/', views.baseanticlockwise, name='baseanticlockwise'),
+    path('left/', views.left, name='left'),
+    path('right/', views.right, name='right'),
     path('up/', views.up, name='up'),
     path('down/', views.down, name='down'),
     path('elbowup/', views.elbowup, name='elbowup'),
