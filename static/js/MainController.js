@@ -2,10 +2,12 @@ angular
     .module('app')
     .controller('MainController', MainController);
 
-MainController.$inject = ['$scope']
+// MainController.$inject = ['$scope'];
 
-function MainController($scope) {
+function MainController() {
+
+    var vm = this;
 
     console.log('hit hit')
-    $scope.test = 'hello from the test!!!!';
+    vm.test = 'hello from the test!!!!';
 }
