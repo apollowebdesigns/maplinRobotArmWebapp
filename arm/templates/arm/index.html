@@ -17,6 +17,7 @@
     {% load static %}
     <script src="{% static "js/app.js" %}"></script>
     <script src="{% static "js/MainController.js" %}"></script>
+    <script src="{% static "js/mainDirective.js" %}"></script>
 </head>
 {% verbatim %}
 <body class="container" ng-app="app" ng-controller="MainController as mainCtrl">
@@ -24,6 +25,8 @@
     <main class="container">
         <h3 ng-bind="mainCtrl.test"></h3>
         <p>stuff should start to appear?</p>
+
+        <main-directive></main-directive>
         <p ng-bind="second"></p>
 
     </main>
