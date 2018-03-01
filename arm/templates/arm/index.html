@@ -17,10 +17,10 @@
     {% load static %}
     <script src="{% static "js/app.js" %}"></script>
 </head>
-<body class="container">
+<body class="container" ng-app="app" ng-controller="controllerT as c">
     <h1><img style="height:100px;width:auto;margin-bottom:-30px" src="https://raw.githubusercontent.com/ServiceStack/Assets/master/img/livedemos/techstacks/django-logo.png" alt=""> This should work??</h1>
     <main class="container">
-        <p>stuff should start to appear?</p>
+        <p ng-bind="c.test">stuff should start to appear?</p>
         <button onclick="test()" class="btn">Test button</button>
 
         <p id="test">
