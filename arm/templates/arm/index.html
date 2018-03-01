@@ -12,25 +12,21 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
 
     {% load static %}
     <script src="{% static "js/app.js" %}"></script>
-    <script src="{% static "js/MainController.js" %}"></script>
-    <script src="{% static "js/mainDirective.js" %}"></script>
 </head>
-{% verbatim %}
-<body class="container" ng-app="app" ng-controller="MainController as mainCtrl">
+<body class="container">
     <h1><img style="height:100px;width:auto;margin-bottom:-30px" src="https://raw.githubusercontent.com/ServiceStack/Assets/master/img/livedemos/techstacks/django-logo.png" alt=""> This should work??</h1>
     <main class="container">
-        <h3 ng-bind="mainCtrl.test"></h3>
         <p>stuff should start to appear?</p>
+        <button onclick="test()"></button>
 
-        <main-directive></main-directive>
-        <p ng-bind="second"></p>
+        <p id="test">
+            keep on testing
+        </p>
 
     </main>
     
 </body>
-{% endverbatim %}
 </html>
