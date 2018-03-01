@@ -5,12 +5,3 @@
 
 angular
     .module('app', []);
-
-angular
-    .module('app')
-    .controller('controllerT', controllerT)
-
-function controllerT() {
-    var vm = this;
-    vm.test = 'second';
-}
