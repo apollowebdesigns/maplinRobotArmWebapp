@@ -33,4 +33,6 @@ note, one of the ids are wrong so for python use lsusb command to find the write
 
 Protractor is currently being used for UI testing in the project
 
+For Python Selenium, webdriver needs to be started and you need to have chromedriver to interact with chrome.
+
 # HAVE FAITH!!!
