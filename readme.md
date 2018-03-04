@@ -29,4 +29,8 @@ https://www.wikihow.com/Use-a-USB-Robotic-Arm-with-a-Raspberry-Pi-(Maplin)
 
 note, one of the ids are wrong so for python use lsusb command to find the write id
 
+### Tests
+
+Protractor is currently being used for UI testing in the project
+
 # HAVE FAITH!!!
