@@ -1,12 +1,17 @@
-from django.test import TestCase
-from unittest.mock import MagicMock
-from unittest.mock import patch
+import unittest
+import movearm
+from arminit import MoveArm
 
 def stub():
-    return 'hello'
+    'hello'
 
-class ArmTestCase(TestCase):
-    def setUp(self):
+MoveArm = stub
 
-    def test_animals_can_speak(self):
-        self.assertEqual(stub(), 'The lion says "roar"')
+class TestStringMethods(unittest.TestCase):
+
+    def first_test(self):
+        s = 'hello world'
+        self.assertEqual(movearm.baseclockwise(), 'test')
+
+if __name__ == '__main__':
+    unittest.main()
