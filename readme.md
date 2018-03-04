@@ -37,4 +37,6 @@ Protractor is currently being used for UI testing in the project
 
 For Python Selenium, webdriver needs to be started and you need to have chromedriver to interact with chrome.
 
+pip install behave for cucumber language for python
+
 # HAVE FAITH!!!
