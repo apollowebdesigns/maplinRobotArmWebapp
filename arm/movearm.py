@@ -1,3 +1,7 @@
+"""
+Times are controlled from within this file for grip
+"""
+
 from arminit import MoveArm
 def baseclockwise():
     MoveArm(1,[0,1,0]) #Rotate base anti-clockwise
@@ -32,11 +36,11 @@ def wristdown():
     return 'the arm has moved!!!'
 
 def gripopen():
-    MoveArm(1,[2,0,0]) #Grip open
+    MoveArm(0.1,[2,0,0]) #Grip open
     return 'the arm has moved!!!'
 
 def gripclose():
-    MoveArm(1,[1,0,0]) #Grip close
+    MoveArm(0.1,[1,0,0]) #Grip close
     return 'the arm has moved!!!'
 
 def lighton():
