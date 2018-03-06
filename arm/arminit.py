@@ -9,7 +9,7 @@ if RoboArm is None:
     raise ValueError("Arm not found")
  
 #Create a variable for duration
-Duration=0.1
+Duration=0.01
  
 #Define a procedure to execute each movement
 def MoveArm(Duration, ArmCmd):
