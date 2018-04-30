@@ -8,6 +8,12 @@ python manage.py runserver 0:8000
 
 flask currently
 
+you will need to install this 
+
+wget https://sourceforge.net/projects/pyusb/files/PyUSB%201.0/1.0.0/pyusb-1.0.0.tar.gz
+tar xvf pyusb-1.0.0.tar.gz
+sudo python3 setup.py install
+
 ### Demo Arm Commands
 
 MoveArm(1,[0,1,0]) #Rotate base anti-clockwise
