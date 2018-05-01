@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet"  href="">
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.8.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='init.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+        <script type="text/javascript">
+        </script>
+    </head>
+
+    <body class="container">
+
+        <h2 class="heading">Demo</h2>
+        <button class="btn waves-effect waves-light" id="forwards">Forwards</button>
+        <button class="btn waves-effect waves-light" id="backwards">Backwards</button>
+        <button class="btn waves-effect waves-light" id="right">Right</button>
+        <button class="btn waves-effect waves-light" id="left">Left</button>
+
+        <div class="parallax-container valign-wrapper">
+            <div class="parallax"><iframe id="camera-screen" frameborder="0" class="iframe"></iframe></div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <button class="btn waves-effect waves-light" id="distance">distance mode</button>
+                <button class="btn waves-effect waves-light red" id="stop">stop</button>
+                <button class="btn waves-effect waves-light yellow" id="ultrasonic">ultrasonic</button>
+                <button class="btn waves-effect waves-light yellow" id="ultrasonicStop">stop!!</button>
+                <ul id="stop">
+
+                </ul>
+            </div>
+            <div class="col s6">
+                <ul id="output">
+
+                </ul>
+            </div>
+        </div>
+        
+        
+
+    </body>
+
+</html>
