@@ -21,20 +21,20 @@ angular
         };
     }]);
 
-MainController.$inject = ['$scope', '$http', '$log'];
+MainController.$inject = ['$http', '$log'];
 
-function MainController($scope, $http, $log) {
-    $scope.touched = false;
-
-    $scope.touchStart = function() {
-        $scope.touched = true;
-    }
-
-    $scope.touchEnd = function() {
-        $scope.touched = false;
-    }
-
+function MainController($http, $log) {
     var vm = this;
+    vm.touched = false;
+
+    vm.touchStart = function() {
+        vm.touched = true;
+    }
+
+    vm.touchEnd = function() {
+        vm.touched = false;
+    }
+
     vm.test = 'from main controller';
     vm.moveArm = (url) => {
         $log.info('I have been hit!!!');
