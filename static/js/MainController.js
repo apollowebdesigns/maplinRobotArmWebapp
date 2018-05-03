@@ -21,9 +21,19 @@ angular
         };
     }]);
 
-MainController.$inject = ['$http', '$log'];
+MainController.$inject = ['$scope', '$http', '$log'];
 
-function MainController($http, $log) {
+function MainController($scope, $http, $log) {
+    $scope.touched = false;
+
+    $scope.touchStart = function() {
+        $scope.touched = true;
+    }
+
+    $scope.touchEnd = function() {
+        $scope.touched = false;
+    }
+
     var vm = this;
     vm.test = 'from main controller';
     vm.moveArm = (url) => {
