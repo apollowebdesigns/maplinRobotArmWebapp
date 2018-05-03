@@ -22,18 +22,18 @@
     <h1><img style="height:100px;width:auto;margin-bottom:-30px" src="https://raw.githubusercontent.com/ServiceStack/Assets/master/img/livedemos/techstacks/django-logo.png" alt=""> This should work??</h1>
     <main class="container">
         <p ng-bind="controller.test">stuff should start to appear?</p>
-        <button ng-click="controller.moveArm('left')" class="btn">Move Left</button>
-        <button ng-click="controller.moveArm('right')" class="btn">Move Right</button>
-        <button ng-click="controller.moveArm('up')" class="btn">Move Up</button>
-        <button ng-click="controller.moveArm('down')" class="btn">Move Down</button>
-        <button ng-click="controller.moveArm('elbowup')" class="btn">Move Elbow Up</button>
-        <button ng-click="controller.moveArm('elbowdown')" class="btn">Move Elbow Down</button>
-        <button ng-click="controller.moveArm('wristup')" class="btn">Move Wrist Up</button>
-        <button ng-click="controller.moveArm('wristdown')" class="btn">Move Wrist Down</button>
-        <button ng-click="controller.moveArm('gripopen')" class="btn">Grip Open</button>
-        <button ng-click="controller.moveArm('gripclose')" class="btn">Grip Close</button>
-        <button ng-click="controller.moveArm('lighton')" class="btn">Light On</button>
-        <button ng-click="controller.moveArm('lightoff')" class="btn">Light Off</button>  
+        <button ng-mousedown="controller.moveArm('left')" class="btn">Move Left</button>
+        <button ng-mousedown="controller.moveArm('right')" class="btn">Move Right</button>
+        <button ng-mousedown="controller.moveArm('up')" class="btn">Move Up</button>
+        <button ng-mousedown="controller.moveArm('down')" class="btn">Move Down</button>
+        <button ng-mousedown="controller.moveArm('elbowup')" class="btn">Move Elbow Up</button>
+        <button ng-mousedown="controller.moveArm('elbowdown')" class="btn">Move Elbow Down</button>
+        <button ng-mousedown="controller.moveArm('wristup')" class="btn">Move Wrist Up</button>
+        <button ng-mousedown="controller.moveArm('wristdown')" class="btn">Move Wrist Down</button>
+        <button ng-mousedown="controller.moveArm('gripopen')" class="btn">Grip Open</button>
+        <button ng-mousedown="controller.moveArm('gripclose')" class="btn">Grip Close</button>
+        <button ng-mousedown="controller.moveArm('lighton')" class="btn">Light On</button>
+        <button ng-mousedown="controller.moveArm('lightoff')" class="btn">Light Off</button>  
 
         <p id="test">
             keep on testing
