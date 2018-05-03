@@ -10,11 +10,11 @@ def stop():
     StopArm() #Rotate base anti-clockwise
     return HttpResponse('the arm has moved!!!')
 
-def baseclockwise():
+def left():
     StartArm([0,1,0]) #Rotate base anti-clockwise
     return HttpResponse('the arm has moved!!!')
-
-def baseanticlockwise():
+    
+def right():
     StartArm([0,2,0]) #Rotate base clockwise
     return HttpResponse('the arm has moved!!!')
 
