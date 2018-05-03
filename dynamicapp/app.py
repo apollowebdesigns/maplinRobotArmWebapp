@@ -7,9 +7,13 @@ def hello_world():
    return 'hello world, the app has landed'
 
 # kept it simple with start for now
-@app.route('/start')
+@app.route('/startbaseclockwise')
 def start_baseclockwise_root():
    return start_baseclockwise()
+
+@app.route('/startbaseanticlockwise')
+def start_baseclockwise_root():
+   return start_baseanticlockwise()
 
 @app.route('/stop')
 def stop_root():
