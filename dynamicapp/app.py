@@ -7,15 +7,6 @@ app = Flask(__name__)
 def hello_world():
    return render_template('index.html')
 
-# kept it simple with start for now
-@app.route('/startbaseclockwise')
-def start_baseclockwise_root():
-   return movearm.start_baseclockwise()
-
-@app.route('/startbaseanticlockwise')
-def start_baseanticlockwise_root():
-   return movearm.start_baseanticlockwise()
-
 @app.route('/stop')
 def stop_root():
    return stop()
