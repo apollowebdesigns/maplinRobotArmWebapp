@@ -6,14 +6,6 @@ def index(request):
     context = {}
     return render(request, 'arm/index.html', context)
 
-def start_baseclockwise():
-    StartArm([0,1,0]) #Rotate base anti-clockwise
-    return 'the arm has moved!!!'
-
-def start_baseanticlockwise():
-    StartArm([0,2,0]) #Rotate base anti-clockwise
-    return 'the arm has moved!!!'
-
 def stop():
     StopArm() #Rotate base anti-clockwise
     return 'the arm has moved!!!'
