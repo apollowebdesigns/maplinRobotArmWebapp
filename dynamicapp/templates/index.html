@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet"  href="{{ url_for('static', filename='styles/main.css') }}">
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.8.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/init.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/app.js') }}"></script>
+    </head>
+
+    <body class="container">
+        <button id="left" class="btn waves-effect waves-light">Move Left</button>
+        <button id="right" class="btn waves-effect waves-light">Move Right</button>
+        <button id="up" class="btn waves-effect waves-light">Move Up</button>
+        <button id="down" class="btn waves-effect waves-light">Move Down</button>
+        <button id="elbowup" class="btn waves-effect waves-light">Move Elbow Up</button>
+        <button id="elbowdown" class="btn waves-effect waves-light">Move Elbow Down</button>
+        <button id="wristup" class="btn waves-effect waves-light">Move Wrist Up</button>
+        <button id="wristdown" class="btn waves-effect waves-light">Move Wrist Down</button>
+        <button id="gripopen" class="btn waves-effect waves-light">Grip Open</button>
+        <button id="gripclose" class="btn waves-effect waves-light">Grip Close</button>
+        <button id="lighton" class="btn waves-effect waves-light">Light On</button>
+        <button id="lightoff" class="btn waves-effect waves-light">Light Off</button> 
+    </body>
+
+</html>
