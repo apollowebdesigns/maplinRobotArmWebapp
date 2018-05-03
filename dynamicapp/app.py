@@ -12,7 +12,7 @@ def start_baseclockwise_root():
    return start_baseclockwise()
 
 @app.route('/startbaseanticlockwise')
-def start_baseclockwise_root():
+def start_baseanticlockwise_root():
    return start_baseanticlockwise()
 
 @app.route('/stop')
