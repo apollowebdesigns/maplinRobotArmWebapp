@@ -9,7 +9,7 @@ if RoboArm is None:
     raise ValueError("Arm not found")
  
 #Create a variable for duration
-Duration=0.01
+Duration=0.5
  
 #Define a procedure to execute each movement
 def MoveArm(Duration, ArmCmd):
@@ -17,5 +17,12 @@ def MoveArm(Duration, ArmCmd):
     RoboArm.ctrl_transfer(0x40,6,0x100,0,ArmCmd,3)
     #Stop the movement after waiting a specified duration
     time.sleep(Duration)
+    ArmCmd=[0,0,0]
+    RoboArm.ctrl_transfer(0x40,6,0x100,0,ArmCmd,3)
+
+def StartArm(ArmCmd):
+    RoboArm.ctrl_transfer(0x40,6,0x100,0,ArmCmd,3)
+
+def StopArm():
     ArmCmd=[0,0,0]
     RoboArm.ctrl_transfer(0x40,6,0x100,0,ArmCmd,3)

@@ -22,18 +22,18 @@
     <h1><img style="height:100px;width:auto;margin-bottom:-30px" src="https://raw.githubusercontent.com/ServiceStack/Assets/master/img/livedemos/techstacks/django-logo.png" alt=""> This should work??</h1>
     <main class="container">
         <p ng-bind="controller.test">stuff should start to appear?</p>
-        <button ng-mousedown="controller.moveArm('left')" class="btn">Move Left</button>
-        <button ng-mousedown="controller.moveArm('right')" class="btn">Move Right</button>
-        <button ng-mousedown="controller.moveArm('up')" class="btn">Move Up</button>
-        <button ng-mousedown="controller.moveArm('down')" class="btn">Move Down</button>
-        <button ng-mousedown="controller.moveArm('elbowup')" class="btn">Move Elbow Up</button>
-        <button ng-mousedown="controller.moveArm('elbowdown')" class="btn">Move Elbow Down</button>
-        <button ng-mousedown="controller.moveArm('wristup')" class="btn">Move Wrist Up</button>
-        <button ng-mousedown="controller.moveArm('wristdown')" class="btn">Move Wrist Down</button>
-        <button ng-mousedown="controller.moveArm('gripopen')" class="btn">Grip Open</button>
-        <button ng-mousedown="controller.moveArm('gripclose')" class="btn">Grip Close</button>
-        <button ng-mousedown="controller.moveArm('lighton')" class="btn">Light On</button>
-        <button ng-mousedown="controller.moveArm('lightoff')" class="btn">Light Off</button>  
+        <button ng-mousedown="controller.moveArm('left')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Move Left</button>
+        <button ng-mousedown="controller.moveArm('right')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Move Right</button>
+        <button ng-mousedown="controller.moveArm('up')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Move Up</button>
+        <button ng-mousedown="controller.moveArm('down')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Move Down</button>
+        <button ng-mousedown="controller.moveArm('elbowup')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Move Elbow Up</button>
+        <button ng-mousedown="controller.moveArm('elbowdown')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Move Elbow Down</button>
+        <button ng-mousedown="controller.moveArm('wristup')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Move Wrist Up</button>
+        <button ng-mousedown="controller.moveArm('wristdown')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Move Wrist Down</button>
+        <button ng-mousedown="controller.moveArm('gripopen')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Grip Open</button>
+        <button ng-mousedown="controller.moveArm('gripclose')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Grip Close</button>
+        <button ng-mousedown="controller.moveArm('lighton')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Light On</button>
+        <button ng-mousedown="controller.moveArm('lightoff')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Light Off</button>  
 
         <p id="test">
             keep on testing
