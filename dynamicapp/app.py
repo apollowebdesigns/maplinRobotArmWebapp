@@ -1,4 +1,5 @@
 from flask import Flask, request, Response, render_template
+import movearm
 from movearm import start_baseclockwise, stop, baseclockwise, baseanticlockwise, up, down, elbowup, elbowdown, wristup, wristdown, gripopen, gripclose, lighton, lightoff
 app = Flask(__name__)
 
@@ -9,11 +10,11 @@ def hello_world():
 # kept it simple with start for now
 @app.route('/startbaseclockwise')
 def start_baseclockwise_root():
-   return start_baseclockwise()
+   return movearm.start_baseclockwise()
 
 @app.route('/startbaseanticlockwise')
 def start_baseanticlockwise_root():
-   return start_baseanticlockwise()
+   return movearm.start_baseanticlockwise()
 
 @app.route('/stop')
 def stop_root():
