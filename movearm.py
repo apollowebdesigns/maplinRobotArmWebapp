@@ -1,4 +1,13 @@
-from arminit import MoveArm
+from arminit import MoveArm, StartArm, StopArm
+
+def start_baseclockwise():
+    StartArm([0,1,0]) #Rotate base anti-clockwise
+    return 'the arm has moved!!!'
+
+def stop():
+    StopArm() #Rotate base anti-clockwise
+    return 'the arm has moved!!!'
+
 def baseclockwise():
     MoveArm(0.1,[0,1,0]) #Rotate base anti-clockwise
     return 'the arm has moved!!!'

@@ -1,10 +1,19 @@
 from flask import Flask
-from movearm import baseclockwise, baseanticlockwise, up, down, elbowup, elbowdown, wristup, wristdown, gripopen, gripclose, lighton, lightoff
+from movearm import start_baseclockwise, stop, baseclockwise, baseanticlockwise, up, down, elbowup, elbowdown, wristup, wristdown, gripopen, gripclose, lighton, lightoff
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
    return 'hello world, the app has landed'
+
+# kept it simple with start for now
+@app.route('/start')
+def start_baseclockwise_root():
+   return start_baseclockwise()
+
+@app.route('/stop')
+def baseclockwise_root():
+   return stop()
 
 @app.route('/baseclockwise')
 def baseclockwise_root():

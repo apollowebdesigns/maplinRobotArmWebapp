@@ -19,3 +19,10 @@ def MoveArm(Duration, ArmCmd):
     time.sleep(Duration)
     ArmCmd=[0,0,0]
     RoboArm.ctrl_transfer(0x40,6,0x100,0,ArmCmd,3)
+
+def StartArm(ArmCmd):
+    RoboArm.ctrl_transfer(0x40,6,0x100,0,ArmCmd,3)
+
+def StopArm():
+    ArmCmd=[0,0,0]
+    RoboArm.ctrl_transfer(0x40,6,0x100,0,ArmCmd,3)
