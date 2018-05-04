@@ -39,4 +39,8 @@ For Python Selenium, webdriver needs to be started and you need to have chromedr
 
 pip install behave for cucumber language for python
 
-# HAVE FAITH!!!
+## Useful urls
+
+Maplin arm on mobile phone
+
+http://172.20.10.8/arm/
