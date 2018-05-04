@@ -17,14 +17,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.6.10/angular-touch.min.js"></script>
 
     {% load static %}
+    <link rel="stylesheet" href="{% static "styles/main.css" %}">
     <script src="{% static "js/app.js" %}"></script>
     <script src="{% static "js/MainController.js" %}"></script>
 </head>
 <body class="container" ng-app="app" ng-controller="MainController as controller">
     <main class="container">
-        <p ng-bind="controller.isThisMobile">stuff should start to appear?</p>
-        <p ng-bind="controller.isItMobile">stuff should start to appear?</p>
-
         <div ng-hide="controller.isItMobile">
             <h1><img style="height:100px;width:auto;margin-bottom:-30px" src="https://raw.githubusercontent.com/ServiceStack/Assets/master/img/livedemos/techstacks/django-logo.png" alt=""> This should work??</h1>
 
@@ -46,18 +44,18 @@
             <h1>Mobile mode</h1>
             <img style="width:100%;height:auto;margin-bottom:-30px" src="https://raw.githubusercontent.com/ServiceStack/Assets/master/img/livedemos/techstacks/django-logo.png" alt="">
             <br />
-            <button my-touchstart="controller.moveArm('left')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Left</button>
-            <button my-touchstart="controller.moveArm('right')" my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Right</button>
-            <button my-touchstart="controller.moveArm('up')" my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Up</button>
-            <button my-touchstart="controller.moveArm('down')"  my-touchend="controller.moveArm('stop')" class="btn waves-effect waves-light lime lighten-2">Move Down</button>
-            <button my-touchstart="controller.moveArm('elbowup')"  my-touchend="controller.moveArm('stop')" class="btn waves-effect waves-light lime lighten-2">Move Elbow Up</button>
-            <button my-touchstart="controller.moveArm('elbowdown')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Elbow Down</button>
-            <button my-touchstart="controller.moveArm('wristup')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Wrist Up</button>
-            <button my-touchstart="controller.moveArm('wristdown')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Wrist Down</button>
-            <button my-touchstart="controller.moveArm('gripopen')"  my-touchend="controller.moveArm('stop')" class="btn waves-effect waves-light lime lighten-2">Grip Open</button>
-            <button my-touchstart="controller.moveArm('gripclose')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Grip Close</button>
-            <button my-touchstart="controller.moveArm('lighton')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Light On</button>
-            <button my-touchstart="controller.moveArm('lightoff')"  my-touchend="controller.moveArm('stop')" class="btn waves-effect waves-light lime lighten-2">Light Off</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('left')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Left</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('right')" my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Right</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('up')" my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Up</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('down')"  my-touchend="controller.moveArm('stop')" class="btn waves-effect waves-light lime lighten-2">Move Down</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('elbowup')"  my-touchend="controller.moveArm('stop')" class="btn waves-effect waves-light lime lighten-2">Move Elbow Up</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('elbowdown')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Elbow Down</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('wristup')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Wrist Up</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('wristdown')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Move Wrist Down</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('gripopen')"  my-touchend="controller.moveArm('stop')" class="btn waves-effect waves-light lime lighten-2">Grip Open</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('gripclose')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Grip Close</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('lighton')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light lime lighten-2">Light On</button>
+            <button class="mobile-button-padding" my-touchstart="controller.moveArm('lightoff')"  my-touchend="controller.moveArm('stop')" class="btn waves-effect waves-light lime lighten-2">Light Off</button>
         </div>
         
         
