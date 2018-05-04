@@ -35,7 +35,8 @@ function MainController($scope, $http, $log) {
     }
 
     var vm = this;
-    vm.test = 'from main controller';
+    vm.isThisMobile = 'is this mobile?';
+    vm.test = Modernizr.touch;
     vm.moveArm = (url) => {
         $log.info('I have been hit!!!');
         $http
