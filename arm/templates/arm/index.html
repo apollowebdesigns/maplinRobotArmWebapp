@@ -15,9 +15,19 @@
             -webkit-touch-callout:none;
         }
 
+        i {
+            -webkit-user-select:none;
+            -webkit-touch-callout:none;
+        }
+
         button {
             -webkit-user-select:none;
             -webkit-touch-callout:none;
+        }
+
+        .mobilemode .col.s6 > .btn {
+            width: 100%;
+            margin-bottom: 5px;
         }
     </style>
 
@@ -51,7 +61,7 @@
             <button ng-mousedown="controller.moveArm('lightoff')" ng-mouseup="controller.moveArm('stop')" class="btn waves-effect waves-light">Light Off</button>
         </div>
 
-        <div ng-show="controller.isItMobile">
+        <div ng-show="controller.isItMobile" class="mobilemode">
             <h1>Mobile mode</h1>
             <img style="width:100%;height:auto;margin-bottom:-30px" src="https://raw.githubusercontent.com/ServiceStack/Assets/master/img/livedemos/techstacks/django-logo.png" alt="">
             <br />
@@ -71,8 +81,7 @@
                     <button my-touchstart="controller.moveArm('gripclose')"  my-touchend="controller.moveArm('stop')"  class="btn waves-effect waves-light deep-purple darken-3">Grip Close</button>
                 </div>
             </div>
-            <i my-touchstart="controller.moveArm('lighton')"  my-touchend="controller.moveArm('stop')" class="material-icons">hightlight</i>
-            <button class="btn waves-effect waves-light deep-purple darken-3">Light On</button>
+            <button my-touchstart="controller.moveArm('lighton')"  my-touchend="controller.moveArm('stop')" class="btn waves-effect waves-light deep-purple darken-3">Light On</button>
             <button my-touchstart="controller.moveArm('lightoff')"  my-touchend="controller.moveArm('stop')" class="btn waves-effect waves-light deep-purple darken-3">Light Off</button>
         </div>
         
