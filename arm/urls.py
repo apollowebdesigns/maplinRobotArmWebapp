@@ -17,4 +17,6 @@ urlpatterns = [
     path('gripclose/', views.gripclose, name='gripclose'),
     path('lighton/', views.lighton, name='lighton'),
     path('lightoff/', views.lightoff, name='lightoff'),
+    path('backwards/', views.backwards, name='backwards'),
+    path('forwards/', views.forwards, name='forwards'),
 ]

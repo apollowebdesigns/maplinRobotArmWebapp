@@ -59,3 +59,11 @@ def lighton():
 def lightoff():
     StartArm([0,0,0]) #Light off
     return 'the arm has moved!!!'
+
+def backwards():
+    StartArm([99,0,0])
+    return 'the arm has moved!!!'
+
+def forwards():
+    StartArm([144,0,0])
+    return 'the arm has moved!!!'

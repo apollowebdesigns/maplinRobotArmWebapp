@@ -57,3 +57,11 @@ def lighton(request):
 def lightoff(request):
     StartArm([0,0,0]) #Light off
     return HttpResponse('the arm has moved!!!')
+
+def backwards(request):
+    StartArm([99,0,0])
+    return HttpResponse('the arm has moved!!!')
+
+def forwards(request):
+    StartArm([144,0,0])
+    return HttpResponse('the arm has moved!!!')

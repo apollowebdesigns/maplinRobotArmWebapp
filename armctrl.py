@@ -58,8 +58,10 @@ def lightoff():
     StartArm([0,0,0]) #Light off
     return 'the arm has moved!!!'
 
+def backwards():
+    StartArm([99,0,0])
+    return 'the arm has moved!!!'
+
 def forwards():
-    p1 = Process(target = down)
-    p1.start()
-    p2 = Process(target = elbowup)
-    p2.start()
+    StartArm([144,0,0])
+    return 'the arm has moved!!!'
