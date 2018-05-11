@@ -20,6 +20,11 @@ def up():
     StartArm([64,0,0]) #Shoulder up
     return 'the arm has moved!!!'
 
+def forwards():
+    StartArm([128,0,0]) #Shoulder down
+    StartArm([16,0,0])
+    return 'the arm has moved!!!'
+
 def down():
     StartArm([128,0,0]) #Shoulder down
     return 'the arm has moved!!!'
