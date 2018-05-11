@@ -1,4 +1,6 @@
 from arminit import MoveArm, StartArm, StopArm
+from multiprocessing import Process
+import sys
 
 def start_baseclockwise():
     StartArm([0,1,0]) #Rotate base anti-clockwise
@@ -18,12 +20,7 @@ def baseanticlockwise():
 
 def up():
     StartArm([64,0,0]) #Shoulder up
-    return 'the arm has moved!!!'
-
-def forwards():
-    StartArm([128,0,0]) #Shoulder down
-    StartArm([16,0,0])
-    return 'the arm has moved!!!'
+    return 'the arm has moved!!!'    
 
 def down():
     StartArm([128,0,0]) #Shoulder down
@@ -60,3 +57,9 @@ def lighton():
 def lightoff():
     StartArm([0,0,0]) #Light off
     return 'the arm has moved!!!'
+
+def forwards():
+    p1 = Process(target = down)
+    p1.start()
+    p2 = Process(target = elbowup)
+    p2.start()
