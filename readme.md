@@ -30,6 +30,7 @@ note, one of the ids are wrong so for python use lsusb command to find the write
 ### Tests
 
 #### UI testing
+
 NB: Testing is still in development currently and needs to be finalised
 
 Protractor is currently being used for UI testing in the project
