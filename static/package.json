@@ -1,0 +1,32 @@
+{
+  "name": "maplinrobotarmwebapp",
+  "version": "1.0.0",
+  "description": "This is a robotic arm controlled via a web app and server using Django and AngularJS.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "protractor-cucumber-framework": "^5.0.0",
+    "protractor": "^5.3.2"
+  },
+  "devDependencies": {
+    "angular": "^1.7.0",
+    "jquery": "^3.3.1",
+    "materialize-css": "^1.0.0-rc.1",
+    "modernizr": "^3.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apollowebdesigns/maplinRobotArmWebapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apollowebdesigns/maplinRobotArmWebapp/issues"
+  },
+  "homepage": "https://github.com/apollowebdesigns/maplinRobotArmWebapp#readme"
+}
