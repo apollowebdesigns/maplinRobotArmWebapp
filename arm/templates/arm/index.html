@@ -9,6 +9,13 @@
     <!-- Compiled and minified CSS -->
     {% load static %}
     <link rel="stylesheet" href="{% static "node_modules/materialize-css/dist/css/materialize.min.css" %}">
+    <script src="{% static "node_modules/angular.min.js" %}"></script>
+    <script src="{% static "node_modules/jquery/dist/jquery.min.js" %}"></script>
+    <script src="{% static "node_modules/modernizr/modernizr.js" %}"></script>
+    <script src="{% static "node_modules/materialize-css/dist/js/materialise.min.js" %}"></script>
+    <script src="{% static "node_modules/angular-touch/angular-touch.min.js" %}"></script>
+    <script src="{% static "js/app.js" %}"></script>
+    <script src="{% static "js/MainController.js" %}"></script>
 
     <style type="text/css">
         img {
@@ -31,15 +38,6 @@
             margin-bottom: 5px;
         }
     </style>
-
-    {% load static %}
-    <script src="{% static "node_modules/angular.min.js" %}"></script>
-    <script src="{% static "node_modules/jquery/dist/jquery.min.js" %}"></script>
-    <script src="{% static "node_modules/modernizr/modernizr.js" %}"></script>
-    <script src="{% static "node_modules/materialize-css/dist/js/materialise.min.js" %}"></script>
-    <script src="{% static "node_modules/angular-touch/angular-touch.min.js" %}"></script>
-    <script src="{% static "js/app.js" %}"></script>
-    <script src="{% static "js/MainController.js" %}"></script>
 </head>
 <body class="container" ng-app="app" ng-controller="MainController as controller">
     <main class="container">
