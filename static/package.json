@@ -18,7 +18,8 @@
     "modernizr": "^3.6.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "modern": "./node_modules/bin/modernizr -c node_modules/lib/config-all.json"
   },
   "repository": {
     "type": "git",
