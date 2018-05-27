@@ -19,7 +19,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "modern": "./node_modules/bin/modernizr -c node_modules/lib/config-all.json"
+    "modern": "./node_modules/modernizr/bin/modernizr -c node_modules/modernizr/lib/config-all.json"
   },
   "repository": {
     "type": "git",
