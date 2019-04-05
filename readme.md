@@ -6,6 +6,15 @@ python manage.py runserver 0:8000
 
 make life easy and install the shell script
 
+## Use virtualenv to make life easy
+
+```
+pip3 install virtualenv
+python3 -m venv .env
+source .env/bin/activate
+pip install -r requirements.txt
+```
+
 ### Demo Arm Commands
 
 MoveArm(1,[0,1,0]) #Rotate base anti-clockwise
