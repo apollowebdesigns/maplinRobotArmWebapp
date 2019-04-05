@@ -4,3 +4,7 @@ tar xvf pyusb-1.0.0.tar.gz
 rm -rf pyusb-1.0.0.tar.gz
 cd pyusb-1.0.0
 sudo python3 setup.py install
+pip3 install virtualenv
+python3 -m venv .env
+source .env/bin/activate
+pip install -r requirements.txt
