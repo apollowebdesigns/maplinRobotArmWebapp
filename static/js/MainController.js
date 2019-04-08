@@ -21,18 +21,18 @@ angular
         };
     }]);
 
-MainController.$inject = ['$scope', '$http', '$log'];
+MainController.$inject = ['$scope', '$http', '$log', 'Modernizr'];
 
-function MainController($scope, $http, $log) {
+function MainController($scope, $http, $log, Modernizr) {
     $scope.touched = false;
 
     $scope.touchStart = function(url) {
         $scope.touched = true;
-    }
+    };
 
     $scope.touchEnd = function(url) {
         $scope.touched = false;
-    }
+    };
 
     var vm = this;
     vm.isThisMobile = 'is this mobile?';
