@@ -6,6 +6,16 @@ python manage.py runserver 0:8000
 
 make life easy and install the shell script
 
+## Running
+
+```bash
+sudo crontab -e
+```
+
+run python script from there
+
+[tutorial to use cron](https://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/)
+
 ## Use virtualenv to make life easy
 
 ```
