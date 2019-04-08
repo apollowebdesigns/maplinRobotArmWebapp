@@ -21,9 +21,9 @@ angular
         };
     }]);
 
-MainController.$inject = ['$scope', '$http', '$log', 'Modernizr'];
+MainController.$inject = ['$scope', '$http', '$log'];
 
-function MainController($scope, $http, $log, Modernizr) {
+function MainController($scope, $http, $log) {
     $scope.touched = false;
 
     $scope.touchStart = function(url) {
